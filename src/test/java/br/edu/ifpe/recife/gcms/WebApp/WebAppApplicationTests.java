@@ -25,6 +25,12 @@ this.mockMvc.perform(get("/"))
 public void shouldReturnOutraMessage() throws Exception {
     this.mockMvc.perform(get("/Raul"))
         .andDo(print()).andExpect(status().isOk())
-        .andExpect(content().string(containsString("Hello, Raul!")));
+        .andExpect(content().string(containsString("Hello, Raul da Copia Original e Raul da Copia!")));
+}
+@Test
+public void shouldReturnHotfix() throws Exception {
+    this.mockMvc.perform(get("/hotfix"))
+        .andDo(print()).andExpect(status().isOk())
+        .andExpect(content().string(containsString("Hello, Hotfix!")));
 }
 }
