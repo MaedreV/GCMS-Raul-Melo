@@ -13,7 +13,7 @@ public class HomeController {
 
 	@RequestMapping("/Raul")
 	public @ResponseBody String greetingRaul() {
-		return "Hello, Raul da Copia Original e Raul do erro";
+		return "Hello, Raul da Copia Original e Raul da Copia!";
 	}
 	@RequestMapping("/hotfix")
 	public @ResponseBody String greetingHotfix() {
